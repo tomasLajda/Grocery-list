@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .message {
+    @apply absolute rounded px-3 top-4 right-14 w-2/3 text-center z-10;
+  }
+  .error {
+    @apply message bg-red-500;
+  }
+  .success {
+    @apply message bg-green-500;
+  }
+}
